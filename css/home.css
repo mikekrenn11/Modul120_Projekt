@@ -1,0 +1,725 @@
+#top, #bottom, #left, #right {
+  background: rgba(47, 47, 47, 1);
+  position: fixed;
+}
+
+body {
+  padding: 1px;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.disableAtStart{
+  display:none;
+}
+
+html{
+  height: 100%;
+  margin-bottom: 0.8px;
+}
+
+#left, #right {
+  top: 0;
+  bottom: 0;
+  width: .8px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top, #bottom {
+  left: 0;
+  right: 0;
+  height: .8px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+.logotext{
+  margin: 0;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(154, 154, 154, 0.64);
+  margin-top:-1px;
+
+}
+
+#gameIcon{
+  height: 30px;
+  width: 30px;
+  margin-left: 25px;
+  margin-top: 23px;
+}
+
+#topNavBar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  position: fixed;
+  top: 0;
+  left: 0.7px;
+  right: 99px;
+  height: 20px;
+  background: rgba(47, 47, 47, 1);
+}
+
+#buttonsTopNav {
+  position: fixed;
+  float: right;
+  padding: 0;
+  top: 0;
+  margin: 0;
+  right: 0.8px;
+  height: 20px;
+  width: 99px;
+}
+
+.buttonsSingleTopNav {
+  background: rgba(47, 47, 47, 1);
+  width: 33px;
+  height: 20px;
+}
+
+.buttonsSingleTopNav>p {
+  text-align: center;
+  position: relative;
+}
+
+.buttonsSingleTopNav:hover {
+  background: rgba(24, 24, 24, 1);
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.mainWindow{
+  height: 100%;
+  width: 100%;
+  margin: 0.8px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.menuRibbon{
+  position: fixed;
+  width: 150px;
+  top: 20px;
+  bottom: 0.8px;
+  background: rgba(47, 47, 47, 1);
+}
+
+.contentBox{
+  height: 100%;
+  width: 100%;
+  padding-left: 150px;
+
+
+}
+.profilPopout{
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translate(-101%, -50%);
+    height: 400px;
+    width: 250px;
+    background: rgba(24, 24, 24, 1);
+    border-radius: 5px;
+
+}
+
+.socialPop{
+  /* TODO: on mouse over resize to bigger window */
+    position: fixed;
+    bottom: 1px;
+    left: 160px;
+    height: 150px;
+    width: 150px;
+    background: rgba(24, 24, 24, 1);
+    border-radius: 5px;
+
+}
+
+.bottomRibbons{
+
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 65px
+}
+
+.topRibbons{
+  width: 100%;
+  height: 200px;
+
+}
+
+.wishList{
+  width: 100%;
+  height: 50%;
+  background: rgba(70, 70, 70, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  padding-top: 25%;
+  justify-content: center;
+
+}
+
+.wishList > h4{
+      margin-right: 40px;
+}
+
+.games{
+  width: 100%;
+  height: 50%;
+  background: rgba(70, 70, 70, 0.3);
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  padding-top: 25%;
+  justify-content: center;
+
+}
+
+.games > h4 {
+  color: #d7d7d7;
+}
+
+.wishList > h4 {
+  color: #d7d7d7;
+}
+
+
+.social{
+  width: 100%;
+  height: 50%;
+  background: rgba(70, 70, 70, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  top: 50%;
+  padding-left: 10px;
+
+}
+
+.profil{
+  width: 100%;
+  height: 50%;
+  background: rgba(70, 70, 70, 0.3);
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+.social > h4 {
+  color: #d7d7d7;
+  transform: translateY(40%);
+
+}
+
+.profilImg{
+  border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      margin-top: 7.5px;
+      margin-right: 7.5px;
+
+}
+
+.userInfo > h4 {
+  color: #d7d7d7;
+  transform: translateY(25%);
+  margin: 0;
+}
+.userInfo > p {
+  margin: 0;
+  margin-top: 1px;
+  margin-left: 0.5px;
+  color: rgba(167, 167, 222, 1);
+}
+
+#gameContent{
+  width: 100%;
+  height: 100%;
+
+}
+#wishlistContent{
+
+  height: 100%;
+  overflow: scroll;
+}
+
+.ProfilNamePicStatus{
+  width: 250px;
+  height: 100px;
+  display: flex;
+}
+.ProfilPic{
+  height: 100%;
+  width: 100px;
+
+}
+#userProfilPicture {
+  height: 70%;
+  width: 70%;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+.ProfilNameStatus{
+  height: 100%;
+  width: 150px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(167, 167, 222, 1);
+  border-bottom-width: 1px;
+  padding-right: 10px;
+
+}
+#usernameDisplayProfilWindow{
+
+padding-top: 10px;
+color: rgba(167, 167, 222, 1);
+
+}
+.ProfilStatus{
+
+}
+
+.changeDeleteProfilPic{
+
+}
+
+#statusMSG{
+  height: 40px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(167, 167, 222, 1);
+  background-color: #2f3136;
+}
+#statusMSG:focus{
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 5px;
+}
+
+[type="file"] {
+  border: 0;
+  height: 30px;
+  width: 60px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute !important;
+  white-space: nowrap;
+
+}
+
+[type="file"] + label {
+  height: 30px;
+  width: 60px;
+  background-color: #2f3136;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 5px;
+  color: #d7d7d7;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  margin: 5px;
+  text-align: center;
+
+}
+
+[type="file"]:focus + label,
+[type="file"] + label:hover {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 5px;
+
+}
+
+[type="file"]:focus + label {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 5px;
+}
+
+#SubmitResetProfilePic{
+  margin: 5px;
+  font-size: 12px;
+  height: 30px;
+  width: 60px;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #2f3136;
+  border-radius: 5px;
+  padding: 5px;
+  color: #d7d7d7;
+  cursor: pointer;
+  display: inline-block;
+}
+#SubmitResetProfilePic:hover{
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 5px;
+}
+#SubmitResetProfilePic:focus{
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 5px;
+}
+
+.description{
+width: 100%;
+height: 250px;
+margin-top: 40px;
+padding: 25px;
+
+}
+.descriptionTitleBar{
+  width: 100%;
+  height: 30px;
+  color: #d7d7d7;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+.descriptionInput{
+height: 100%;
+}
+
+.descriptionInput > textarea{
+  width: 100%;
+  height: 90%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(167, 167, 222, 1);
+  background-color: #2f3136;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus{
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.shortcut{
+  position: FIXED;
+  left: 65px;
+  height: 25px;
+  width: 25px;
+  margin-top: -30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 1px;
+  border-style: solid;
+  border-width: 1px;
+  color: rgba(111, 111, 162, 0.8);
+  background-color: #2f3136;
+}
+
+.shortcut > h6{
+  text-align: center;
+  padding-top: 1px;
+}
+
+.socialShortcut{
+  left: 77px;
+  margin-top: -35px;
+}
+.profilShortcut{
+  left: 77px;
+  margin-top: -49px;
+}
+
+.gameNewsContainer{
+  height: 100%;
+  margin: 20px;
+  padding-bottom: 75px;
+  overflow: scroll;
+
+}
+
+.datatableGames{
+  width: 100%;
+  height: 100%;
+
+}
+
+tr {
+ color: #d7d7d7;
+}
+
+#table_idWishlist{
+  color: #d7d7d7;
+
+}
+
+#table_id{
+  color: #d7d7d7;
+
+}
+
+#table_idWishlist_filter > label {
+  color: #d7d7d7;
+
+}
+
+#table_idWishlist_length > label {
+  color: #d7d7d7;
+
+}
+#table_idWishlist_paginate > a {
+  color: #d7d7d7;
+}
+
+#table_id_filter > label {
+  color: #d7d7d7;
+
+}
+#table_id_info{
+  color: #d7d7d7;
+}
+
+#table_id_length > label {
+  color: #d7d7d7;
+
+}
+#table_id_paginate > a {
+  color: #d7d7d7;
+}
+
+
+#table_idWishlist_info {
+  color: #d7d7d7;
+}
+
+#successWishlistMSG{
+  position: fixed;
+  left: 55%;
+  top: 75px;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+
+#deleteWishlistMSG{
+  position: fixed;
+  left: 55%;
+  top: 75px;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+
+*:focus{
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 5px;
+}
+
+td{
+  background-color: #2f3136;
+  color: #d7d7d7;
+}
+
+.sorting_1{
+    background-color: rgba(78, 78, 121, 1) !important;
+}
+
+[type="search"]
+ {
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #d7d7d7;
+  background-color: #2f3136;
+}l
+[type="search"]:focus{
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 5px;
+}
+
+
+.dataTables_paginate {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 57%;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #d7d7d7 !important;
+  background-color: #2f3136;
+}
+.dataTables_info{
+  padding-top: 20px;
+}
+.dataTables_wrapper{
+  position: inherit;
+}
+
+.dataTables_wrapper, .dataTables_paginate, .paginate_button > a{
+  color: #d7d7d7 !important;
+}
+
+#tbody{
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #d7d7d7;
+  background-color: rgba(199, 199, 199, 1);
+}
+
+#statisticsContainer{
+  height: 40%;
+  margin: 10px;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #d7d7d7;
+  background-color: #2f3136;
+  padding: 10px;
+}
+
+#statisticsContainer > h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -25px;
+}
+.graphContainer{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#myChart{
+
+  max-height: 290px;
+  max-width: 550px;
+}
+#myChart > label{
+  color: #d7d7d7;
+}
+
+.datatableWishlist{
+  margin: 25px;
+  padding-bottom: 25px;
+}
+#tbody > tr > td > button{
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #2f3136;
+  background-color: #d7d7d7;
+  width: 75%;
+  margin-left: 10%;
+}
+
+#tbody > tr > td > button:hover{
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: rgba(0, 126, 187, 0.5);
+  border-radius: 0px;
+}
+
+#tbody > tr > td > button:focus{
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: rgba(0, 142, 210, 0.5);
+  border-radius: 0px;
+}
+
+#table_idWishlist_paginate > span > a{
+color: rgba(167, 167, 222, 1) !important;
+}
+
+#table_idWishlist_paginate > a{
+    color: rgba(167, 167, 222, 1) !important;
+
+}
+
+
+#table_id_paginate > span > a{
+color: rgba(167, 167, 222, 1) !important;
+}
+
+#table_id_paginate > a{
+    color: rgba(167, 167, 222, 1) !important;
+
+}
+
+.dataTables_length > label > select{
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #2f3136;
+  background-color: #d7d7d7;
+  width: 100%;
+}
+
+.dataTables_length > label > select:focus{
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: rgba(0, 142, 210, 0.5);
+  border-radius: 0px;
+}

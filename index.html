@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cool Site</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="css\master.css">
+
+</head>
+
+
+<body>
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
+
+  <div id="topNavBar">
+    <div class="logoNavBar">
+
+      <label for="" style="width: 100px;display:flex; justify-content:space-between;float: left;">
+        <img src="css\media\coolIcon.png" class="noselect" style="height:20px; width:20px;">
+        <p class="noselect logotext"> MikLibcord </p>
+      </label>
+    </div>
+  </div>
+
+  <div id="buttonsTopNav" class="btn-group" role="group" aria-label="Basic example">
+    <div class="buttonsSingleTopNav">
+      <p style="bottom: 6px;" class="noselect" id="min-btn">🗕</p>
+    </div>
+    <div class="buttonsSingleTopNav">
+      <p style="bottom: 3px;" class="noselect" id="max-btn" ;>🗖</p>
+    </div>
+    <div class=" buttonsSingleTopNav">
+      <p style="font-size: 26px;bottom: 10px;" id="close-btn" class="noselect" ;>×</p>
+    </div>
+  </div>
+
+  <div class="midCenter">
+    <form name="ipcForm" class="loginContainer" id="loginForm" onSubmit="JavaScript:sendLoginForm(event)">
+      <div class="alert alert-dismissible alert-success disableAtStart" id="registraionSuccess">
+        <strong>Success!</strong>
+        <p>Successfully created account!</p>
+      </div>
+      <h3 class="noselect" style="text-align:center;">Welcome back</h3>
+      <h5 class="noselect">We're exited to see you back so soon!</h5>
+      <div style="margin-bottom: -25px;" class="alert alert-dismissible alert-danger disableAtStart" id="loginFailMsg">
+        <strong>Oh snap!</strong>
+        <p id="loginFailMessage">Invalid email or password! </p>
+      </div>
+      <br class="noselect">
+      <p class="noselect">EMAIL</p>
+      <input type="text" name="email" id="email" value="">
+      <br class="noselect">
+      <br class="noselect">
+      <p class="noselect">PASSWORD</p>
+      <input type="password" name="password" id="password" value="">
+      <a class="noselect" tabindex="-1" href="#">Forgot password?</a>
+      <br class="noselect">
+      <br class="noselect">
+      <input type="submit" class="btn btn-info submitbutton" value="Login">
+      <p class="noselect" style="margin-top: 5px;">Need a Account? <a tabindex="-1" style="color: rgba(0, 187, 126, 0.64);" href="JavaScript:switchLoginRegistrationWindow();">Register</a></p>
+    </form>
+
+    <form name="ipcForm" class="RegisterContainer disableAtStart " id="registerForm" style="display:none;" onSubmit="JavaScript:sendRegistrationForm(event)">
+      <h3 class="noselect" style="text-align:center;">Create account</h3>
+      <h5 class="noselect">We just need some information</h5>
+      <div style="margin-bottom: -25px;" class="alert alert-dismissible alert-danger disableAtStart" id="registrationFail">
+        <strong>Oh snap!</strong>
+        <p id="registrationFailMessage"></p>
+      </div>
+      <br class="noselect">
+      <br class="noselect">
+      <p class="noselect">EMAIL</p>
+      <input type="text" name="email" id="emailReg" value="">
+      <br class="noselect">
+      <br class="noselect">
+      <p class="noselect">USERNAME</p>
+      <input type="text" name="username" id="usernameReg" value="">
+      <br class="noselect">
+      <br class="noselect">
+      <p class="noselect">PASSWORD</p>
+      <input type="password" name="password" id="passwordReg" value="">
+      <br class="noselect">
+      <br class="noselect">
+      <input type="submit" class="btn btn-info submitbutton" value="Create account">
+      <a tabindex="-1" style="color: rgba(0, 187, 126, 0.64);" href="JavaScript:switchLoginRegistrationWindow();">Already have an account?</a>
+    </form>
+
+  </div>
+
+</body>
+<script src="main.js"></script>
+<script src="js\menuHandler.js"></script>
+<script src="renderer.js"></script>
+
+</html>

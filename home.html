@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cool Site</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="css\home.css">
+
+
+  </script>
+
+</head>
+
+
+<body>
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
+
+  <div id="topNavBar">
+    <div class="logoNavBar">
+
+      <label for="" style="width: 100px;display:flex; justify-content:space-between;float: left;">
+        <img src="css\media\coolIcon.png" class="noselect" style="height:20px; width:20px;">
+        <p class="noselect logotext"> MikLibcord </p>
+      </label>
+    </div>
+  </div>
+
+  <div id="buttonsTopNav" class="btn-group" role="group" aria-label="Basic example">
+    <div class="buttonsSingleTopNav">
+      <p style="bottom: 6px;" class="noselect" id="min-btn">🗕</p>
+    </div>
+    <div class="buttonsSingleTopNav">
+      <p style="bottom: 3px;" class="noselect" id="max-btn" ;>🗖</p>
+    </div>
+    <div class=" buttonsSingleTopNav">
+      <p style="font-size: 26px;bottom: 10px;" id="close-btn" class="noselect" ;>×</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="mainWindow">
+
+    <div class="menuRibbon">
+      <div class="topRibbons">
+        <div class="wishList noselect" id="wishlistID">
+          <h4 class="noselect">Wishlist</h4>
+          <div class="wishlistShortcut shortcut">
+            <h6>1</h6>
+          </div>
+        </div>
+        <div class="games noselect" id="gamesID">
+          <h4 class="noselect">Games</h4>
+          <img src="css\media\gameIcon.png" alt="" id="gameIcon">
+          <div class="gamesShortcut shortcut">
+            <h6>2</h6>
+          </div>
+        </div>
+      </div>
+      <div class="bottomRibbons">
+        <div class="social noselect" id="social_ID">
+          <h4 class="noselect">Social</h4>
+          <div class="socialShortcut shortcut shortcutbottom">
+            <h6>3</h6>
+          </div>
+        </div>
+        <div class="profil noselect" id="profil_ID">
+          <div class="userInfo">
+            <h4 class="noselect">Profil</h4>
+            <p id="usernameDisplay" class="noselect">_</p>
+            <div class="profilShortcut shortcut shortcutbottom">
+              <h6>4</h6>
+            </div>
+          </div>
+          <img src="media\coolGuy.jpg" class="profilImg noselect" id="profilIMG">
+        </div>
+      </div>
+    </div>
+    <div class="contentBox">
+      <div id="gameContent">
+        <div class="gameNewsContainer">
+          <div class="disableAtStart" id="successWishlistMSG">
+            <div class="alert alert-dismissible alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong id="successWishlistMessage"></strong>
+            </div>
+
+          </div>
+          <div class="datatableGames">
+            <table id="table_id" class="display">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Tags</th>
+                  <th>Rating out of 10</th>
+                  <th>Price in $</th>
+                  <th>Description</th>
+                  <th>Add to wishlist</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="wishlistContent">
+        <div id="statisticsContainer">
+          <h4>Most Tags in Wishlist</h4>
+          <div class="graphContainer">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <div class="datatableWishlist">
+          <div class="disableAtStart" id="deleteWishlistMSG">
+            <div class="alert alert-dismissible alert-danger">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong id="deleteWishlistMessage"></strong>
+            </div>
+          </div>
+          <table id="table_idWishlist" class="display">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Tags</th>
+                <th>Rating out of 10</th>
+                <th>Price in $</th>
+                <th>Description</th>
+                <th>Remove from list</th>
+              </tr>
+            </thead>
+            <tbody id="tbody" class="wishlist">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="profilPopout noselect" id="profilTab">
+      <div class="ProfilNamePicStatus">
+        <div class="ProfilPic">
+          <img src="media\coolGuy.jpg" alt="" id="userProfilPicture" class="noselect">
+          <div class="noselect" class="changeDeleteProfilPic">
+            <input type="file" name="" value="change" id="fileUpload" accept="image/x-png,image/gif,image/jpeg">
+            <label for="fileUpload" />Change</label>
+            <input type="submit" name="" value="Delete" id="SubmitResetProfilePic">
+          </div>
+        </div>
+        <div class="ProfilNameStatus">
+          <h5 id="usernameDisplayProfilWindow"></h5>
+          <div class="ProfilStatus">
+            <input type="text" name="" value="" placeholder="" id="statusMSG" maxlength="16">
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="descriptionTitleBar">
+          <h5>Description</h5>
+        </div>
+        <div class="descriptionInput">
+          <textarea rows="5" name="descriptionArea" id="descriptionAreaField"> </textarea>
+        </div>
+      </div>
+    </div>
+    <div class="socialPop noselect" id="socialTab">
+
+    </div>
+
+  </div>
+
+</body>
+<script src="main.js"></script>
+<script src="js\menuHandler.js"></script>
+<script src="renderer.js"></script>
+
+
+</html>

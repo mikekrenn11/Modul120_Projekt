@@ -1,0 +1,29 @@
+{
+  "name": "m120_project",
+  "version": "1.0.0",
+  "description": "Modul120",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "install-app-deps"
+  },
+  "author": "Mike Krenn",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.4",
+    "electron-rebuild": "^1.8.8",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "chartjs": "^0.3.24",
+    "datatables.net": "^1.10.20",
+    "datatables.net-dt": "^1.10.20",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "knex": "^0.20.4",
+    "sqlite": "^3.0.3",
+    "sqlite3": "^4.1.1"
+  }
+}
